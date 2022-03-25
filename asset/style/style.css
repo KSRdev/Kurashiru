@@ -3,6 +3,7 @@
 @import 'header.css';
 @import 'home.css';
 @import 'footer.css';
+@import 'about.css';
 
 /* GLOBAL */
 
@@ -53,6 +54,7 @@
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -189,6 +191,13 @@ input {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: var(--mb-2);
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-3);
+    text-align: center;
 }
 
 .container {
