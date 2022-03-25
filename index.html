@@ -10,19 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== JQUERY ===============-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./asset/style/style.css">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="./asset/style/mediaquery.css">
->>>>>>> parent of 28052b5 (contact)
-
-=======
-    <link rel="stylesheet" href="./asset/style/mediaquery.css">
->>>>>>> parent of 28052b5 (contact)
 
     <!-- JS -->
     <script src="./asset/js/app.js" defer></script>
@@ -38,7 +30,7 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
                     <li class="nav__item"><a href="#recipe" class="nav__link">Recipe</a></li>
@@ -118,83 +110,139 @@
                 </div>
             </div>
         </section>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                        Reach out to us today <br> via any of the given <br> information
+                    </h2>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content grid">
-                    <div class="footer__data">
-                        <h3 class="footer__title">Kurashiru</h3>
-                        <p class="footer__description">You choose the <br> food, we offer you the <br> recipe.
-                        </p>
-                        <div>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                                <i class="ri-facebook-box-fill"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Call us for instant support</h3>
+                            <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 888 777
+                                </span>
+                        </div>
+
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Write us by mail</h3>
+                            <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    user@email.com
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
                         </div>
                     </div>
 
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">About</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">About Us</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a href="" class="footer__link">New & Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Team</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Become a member</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Support</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">FAQs</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Support Center</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Contact Us</a>
-                            </li>
-                        </ul>
+                    <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Kurashiru</h3>
+                    <p class="footer__description">You choose the <br> food, we offer you the <br> recipe.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 simone. All rigths reserved.</p>
-                    <div class="footer__terms">
-                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
-                        <a href="#" class="footer__terms-link">Privacy Policy</a>
-                    </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Team</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Become a member</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </main>
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2021 simone. All rigths reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
 </body>
 
 </html>
