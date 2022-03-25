@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/style/style.css">
+    <link rel="stylesheet" href="./asset/style/mediaquery.css">
+
+    <!-- JS -->
+    <script src="./asset/js/app.js" defer></script>
+
+    <title>Kurashiru</title>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img src="./asset/img/kurashiru_logo.png" id="logo__img"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#recipe" class="nav__link">Recipe</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img alt="" class="home__img" src="./asset/img/home_food.jpeg">
+            </img>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__data-title">Explore The <br> Best <b>Delicious <br> Recipe</b></h1>
+                    <a href="#" class="button">Explore</a>
+
+                </div>
+
+                <div class="home__social">
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
