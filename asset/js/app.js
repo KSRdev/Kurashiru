@@ -70,6 +70,7 @@ window.addEventListener('scroll', scrollUp)
 
 
 $(document).ready(function() {
+    console.log('hellllo')
     $(".blog__data").slice(0, 3).show();
     if ($(".blog__data:hidden").length != 0) {
         $("#load").show();
