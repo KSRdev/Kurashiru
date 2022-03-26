@@ -52,7 +52,7 @@
         top: 0;
         right: -100%;
         width: 200px;
-        height: 100%;
+        height: 100vh;
         box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
         padding: 3rem;
         transition: .4s;
@@ -89,7 +89,6 @@
 
 .show-menu {
     right: 0;
-    height: 100vh;
 }
 
 
