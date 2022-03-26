@@ -2,9 +2,10 @@
 
 @import 'header.css';
 @import 'home.css';
-@import 'footer.css';
+@import 'blog.css';
 @import 'about.css';
 @import 'contact.css';
+@import 'footer.css';
 
 /* GLOBAL */
 
@@ -31,6 +32,7 @@
     --input-color: hsl(var(--hue-color), 24%, 97%);
     --body-color: hsl(var(--hue-color), 100%, 99%);
     --white-color: #FFF;
+    --color-link: rgb(183, 228, 199);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
     /*========== Font and typography ==========*/
