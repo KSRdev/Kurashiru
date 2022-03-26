@@ -66,3 +66,19 @@ function scrollUp() {
     else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+
+$(document).ready(function() {
+    $(".blog__data").slice(0, 3).show();
+    if ($(".blog__data:hidden").length != 0) {
+        $("#load").show();
+    }
+    $("#load").on("click", function(e) {
+        e.preventDefault();
+        $(".blog__data:hidden").slice(0, 3).slideDown();
+        if ($(".blog__data:hidden").length == 0) {
+            $("#load").text("No More")
+        }
+    });
+})
