@@ -290,6 +290,7 @@
     .recipe__container {
         gap: 3rem;
         grid-template-columns: repeat(3, max-content);
+        margin-bottom: 2rem;
     }
     .recipe__card {
         padding: 1.25rem;

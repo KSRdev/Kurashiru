@@ -36,11 +36,49 @@ linkWork.forEach(L => L.addEventListener('click', activeWork))
 
 /*=============== HIDE RECIPE DOPO TRE DIV ===============*/
 $(document).ready(function() {
+    $(".recipe__card").slice(0, 6).show();
+    if ($(".recipe__card:hidden").length != 0) {
+        $("#loadRecipe").show();
+    }
     $("#loadRecipe").on("click", function(e) {
         e.preventDefault();
-        $(".recipe__card:hidden").slice(0, 6).slideDown();
+        $(".recipe__card:hidden").slice(0, 3).slideDown();
         if ($(".recipe__card:hidden").length == 0) {
             $("#loadRecipe").text("No More")
         }
     });
 })
+
+$('.recipe__card').hide();
+$('#search').on("keyup", function() {
+    var searchVal = $('#search').val().toUpperCase();
+    var searchVal1 = $('#search').val().toLowerCase();
+
+    if (searchVal == "" || searchVal1 == "") {
+        $(".recipe__card").slice(0, 6).show();
+    } else {
+        $('.recipe__card').show();
+        $('.recipe__card:not(:contains("' + searchVal + '"))').hide();
+    }
+});
+
+
+
+/*=============== SORT RECIPE FROM A TO Z ===============*/
+$('.recipe__card').sort(function(a, b) {
+    if (a.textContent.toLowerCase() < b.textContent.toLowerCase()) {
+        return -1;
+    } else {
+        return 1;
+    }
+}).appendTo('.recipe__container');
+
+/*=============== MIX RECIPE ON CATEGORY ===============*/
+let mixerPortfolio = mixitup('.recipe__container', {
+    selectors: {
+        target: '.recipe__card'
+    },
+    animation: {
+        duration: 300
+    }
+});

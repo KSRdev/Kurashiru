@@ -80,5 +80,16 @@
 
 .active-recipe {
     background-color: var(--first-color);
-    color: var(--body-color);
+    color: var(--white-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="text"],
+select {
+    padding-left: 1rem;
+}
+
+.recipe {
+    display: block;
 }
