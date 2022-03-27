@@ -1,0 +1,20 @@
+{
+    "name": "kurashiru",
+    "version": "1.0.0",
+    "description": "Nice design of a responsive blog/recipe website. It contains a header, home, about, menu, contact and a footer. It also has a fully developed light/dark mode.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KSRdev/Kurashiru.git"
+    },
+    "keywords": [],
+    "author": "Simone",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KSRdev/Kurashiru/issues"
+    },
+    "homepage": "https://github.com/KSRdev/Kurashiru#readme"
+}
