@@ -25,6 +25,24 @@
     .video__container {
         padding: 0;
     }
+    /*==================== recipe ====================*/
+    .recipe__item {
+        font-size: var(--small-font-size);
+    }
+    .recipe__filters {
+        column-gap: .25rem;
+    }
+    .categories {
+        display: grid;
+        padding: 2rem;
+        transition: all ease-in-out;
+        grid-template-columns: repeat(3, max-content);
+    }
+    .recipe__container {
+        gap: 3rem;
+        grid-template-columns: repeat(1, max-content);
+        justify-content: center;
+    }
 }
 
 
@@ -42,6 +60,13 @@
     .subscribe__form {
         width: 470px;
         margin: 0 auto;
+    }
+    /*==================== recipe ====================*/
+    .recipe__container {
+        justify-content: center;
+    }
+    .recipe__img {
+        width: 260px;
     }
 }
 
@@ -173,6 +198,10 @@
         margin-bottom: var(--mb-2);
         text-align: left;
     }
+    /*==================== recipe ====================*/
+    .recipe__container {
+        grid-template-columns: repeat(2, max-content);
+    }
 }
 
 
@@ -250,6 +279,27 @@
     .about__buttons {
         display: flex;
         justify-content: center;
+    }
+    /*==================== recipe ====================*/
+    .categories {
+        display: grid;
+        padding: 2rem;
+        transition: all ease-in-out;
+        grid-template-columns: repeat(8, max-content);
+    }
+    .recipe__container {
+        gap: 3rem;
+        grid-template-columns: repeat(3, max-content);
+    }
+    .recipe__card {
+        padding: 1.25rem;
+    }
+    .recipe__img {
+        margin-bottom: var(--mb-2);
+        width: 260px;
+    }
+    .recipe-title-item {
+        margin-bottom: var(--mb-1-5);
     }
 }
 

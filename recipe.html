@@ -8,9 +8,11 @@
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!--=============== JQUERY ===============-->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./asset/style/style.css">
@@ -26,14 +28,14 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="./asset/img/kurashiru_logo.png" id="logo__img"></a>
+            <a href="./index.html" class="nav__logo"><img src="./asset/img/kurashiru_logo.png" id="logo__img"></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#recipe" class="nav__link">Recipe</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="./index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="./index.html#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="./recipe.html" class="nav__link">Recipe</a></li>
+                    <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact</a></li>
 
                 </ul>
@@ -53,7 +55,71 @@
         </nav>
     </header>
     <main class="main">
+        <!--=============== FILTER ===============-->
+        <section class="recipe section" id="work">
+            <h2 class="section__title">Recipe</h2>
+            <div class="recipe__filters">
+                <input type="text" placeholder="search" id="search" class="section__search"></input>
+                <div class="cat">
+                    <h3>Categories</h3>
+                    <i class="uil uil-arrow-right" id="categories-button"></i>
+                </div>
+                <div class="hide_categories" id="h_categories">
+                    <span class="all recipe__item active-recipe " data-filter='all'>All </span>
+                    <span class="recipe__item" data-filter='.action'>Action</span>
+                    <span class="recipe__item" data-filter='.romance'>Romance</span>
+                    <span class="recipe__item" data-filter='.fantasy'>Fantasy</span>
+                    <span class="recipe__item" data-filter='.comedy'>Comedy</span>
+                    <span class="recipe__item" data-filter='.school'>School</span>
+                    <span class="recipe__item" data-filter='.sports'>Sports</span>
+                    <span class="recipe__item" data-filter='.modern'>Modern</span>
+                    <span class="recipe__item" data-filter='.chinese'>Chinese</span>
+                    <span class="recipe__item" data-filter='.korean'>Korean</span>
+                    <span class="recipe__item" data-filter='.japanese'>Japanese</span>
+                    <span class="recipe__item" data-filter='.historical'>Historical</span>
+                    <span class="recipe__item" data-filter='.friendship'>Friendship</span>
+                    <span class="recipe__item" data-filter='.medical'>Medical</span>
+                    <span class="recipe__item" data-filter='.life'>life</span>
+                    <span class="recipe__item" data-filter='.recipe'>recipe</span>
+                </div>
 
+            </div>
+            <div class="recipe__container container grid">
+                <!-- <div class="recipe__card mix ">
+                    <img src="./asset/img" alt="" class="recipe__img">
+                    <h3 class="recipe-title-item"></h3>
+                    <a href="#" class="recipe__button">
+                        More details <i class='uil uil-angle-right-b recipe__icon'></i> 
+                    </a>
+                </div> -->
+                <div class="recipe__card mix ">
+                    <img src="./asset/img/ramen_recipe.jpeg" alt="" class="recipe__img">
+                    <h3 class="recipe-title-item">Helllllllo</h3>
+                    <a href="#" class="blog__button">
+                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                    </a>
+                </div>
+                <div class="recipe__card mix ">
+                    <img src="./asset/img/burrito_recipe.jpeg" alt="" class="recipe__img">
+                    <h3 class="recipe-title-item">Helllllllo</h3>
+                    <a href="#" class="blog__button">
+                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                    </a>
+                </div>
+                <div class="recipe__card mix ">
+                    <img src="./asset/img/pasta_recipe.jpeg" alt="" class="recipe__img">
+                    <h3 class="recipe-title-item">Helllllllo</h3>
+                    <a href="#" class="blog__button">
+                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                    </a>
+                </div>
+
+        </section>
+        <div class="about__buttons">
+            <div class="button button--flex" id="load">
+                More post<i class="uil uil-download-alt button__icon"></i>
+            </div>
+        </div>
     </main>
     <!--==================== FOOTER ====================-->
     <footer class="footer section">

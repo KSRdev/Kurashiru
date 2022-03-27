@@ -68,8 +68,11 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp)
 
 
-
+/*=============== HIDE BLOG DOPO TRE DIV ===============*/
 $(document).ready(function() {
+
+
+
     $("#load").on("click", function(e) {
         e.preventDefault();
         $(".blog__data:hidden").slice(0, 3).slideDown();
@@ -78,3 +81,37 @@ $(document).ready(function() {
         }
     });
 })
+
+
+/*=============== SHOW/HIDE CATEGORY===============*/
+
+const categoryButton = document.getElementById('categories-button')
+const category = document.getElementById("h_categories")
+const openCategory = 'categories'
+const iconCategory = 'uil-arrow-down'
+
+const selectedcategory = localStorage.getItem('selected-category')
+const selectedCat = localStorage.getItem('selected-cat')
+
+const getCurrentcategory = () => category.classList.contains(openCategory) ? 'open' : 'close'
+const getCurrentCat = () => categoryButton.classList.contains(iconCategory) ? 'uil-arrow-right' : 'uil-arrow-down'
+
+if (selectedCat) {
+    category.classList[selectedcategory === 'open' ? 'add' : 'remove'](openCategory)
+    categoryButton.classList[selectedCat === 'uil-arrow-right' ? 'add' : 'remove'](iconCategory)
+}
+
+categoryButton.addEventListener('click', () => {
+    category.classList.toggle(openCategory)
+    categoryButton.classList.toggle(iconCategory)
+    localStorage.setItem('selected-category', getCurrentcategory())
+    localStorage.setItem('selected-cat', getCurrentCat())
+})
+
+const linkWork = document.querySelectorAll('.recipe__item')
+
+function activeWork() {
+    linkWork.forEach(L => L.classList.remove('active-recipe'))
+    this.classList.add('active-recipe')
+}
+linkWork.forEach(L => L.addEventListener('click', activeWork))
