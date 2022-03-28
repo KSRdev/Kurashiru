@@ -29,211 +29,214 @@
 
 </head>
 
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="./index.html" class="nav__logo"><img src="./asset/img/kurashiru_logo.png" id="logo__img"></a>
+<body id="body">
+    <div id="fade">
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="./index.html#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="./recipe.html" class="nav__link">Recipe</a></li>
-                    <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact</a></li>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav__logo"><img src="./asset/img/kurashiru_logo.png" id="logo__img"></a>
 
-                </ul>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="./index.html#blog" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="./recipe.html" class="nav__link">Recipe</a></li>
+                        <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact</a></li>
 
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
+                    </ul>
 
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <!--=============== FILTER ===============-->
-        <section class="recipe section" id="work">
-            <h2 class="section__title">Recipe</h2>
-            <div class="recipe__filters">
-                <input type="text" onkeyup="search_recipe()" placeholder="search" id="search" class="section__search"></input>
-                <div class="cat">
-                    <h3>Categories</h3>
-                    <i class="uil uil-arrow-right" id="categories-button"></i>
-                </div>
-                <div class="hide_categories" id="h_categories">
-                    <span class="all recipe__item active-recipe " data-filter='all'>All </span>
-                    <span class="recipe__item" data-filter='.breakfast'>Breakfast</span>
-                    <span class="recipe__item" data-filter='.dessert'>dessert</span>
-                    <span class="recipe__item" data-filter='.burgersandwiches'>Burger & Sandwiches</span>
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
                 </div>
 
-            </div>
-            <div class="recipe__container container">
-                <!-- <div class="recipe__card mix ">
-                    <img src="./asset/img" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item"></h3>
-                    <a href="#" class="recipe__button">
-                        More details <i class='uil uil-angle-right-b recipe__icon'></i> 
-                    </a>
-                </div> -->
-                <div class="recipe__card mix">
-                    <img src="./asset/img/ramen_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Helllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
                 </div>
-                <div class="recipe__card mix">
-                    <img src="./asset/img/burrito_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">aelllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix">
-                    <img src="./asset/img/pasta_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Telllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix burgersandwiches">
-                    <img src="./asset/img/burger_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Telllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix">
-                    <img src="./asset/img/chips_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Telllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix ">
-                    <img src="./asset/img/raspberry_brownies_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Telllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix ">
-                    <img src="./asset/img/steaks_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Zelllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix ">
-                    <img src="./asset/img/shrimp_pasta_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Telllllllo</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
-                <div class="recipe__card mix ">
-                    <img src="./asset/img/ribs_recipe.jpeg" alt="" class="recipe__img">
-                    <h3 class="recipe-title-item">Ribs</h3>
-                    <a href="#" class="blog__button">
-                        More details <i class='uil uil-angle-right-b blog__icon'></i> 
-                    </a>
-                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <!--=============== FILTER ===============-->
+            <section class="recipe section" id="work">
+                <h2 class="section__title">Recipe</h2>
+                <div class="recipe__filters">
+                    <input type="text" onkeyup="search_recipe()" placeholder="search" id="search" class="section__search"></input>
+                    <div class="cat">
+                        <h3>Categories</h3>
+                        <i class="uil uil-arrow-right" id="categories-button"></i>
+                    </div>
+                    <div class="hide_categories" id="h_categories">
+                        <span class="all recipe__item active-recipe " data-filter='all'>All </span>
+                        <span class="recipe__item" data-filter='.breakfast'>Breakfast</span>
+                        <span class="recipe__item" data-filter='.dessert'>dessert</span>
+                        <span class="recipe__item" data-filter='.burgersandwiches'>Burger & Sandwiches</span>
+                    </div>
 
-        </section>
-        <div class="about__buttons">
-            <div class="button button--flex" id="loadRecipe">
-                More post<i class="ri-add-line button__icon"></i>
-            </div>
-        </div>
-    </main>
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content grid">
-                <div class="footer__data">
-                    <h3 class="footer__title">Kurashiru</h3>
-                    <p class="footer__description">You choose the <br> food, we offer you the <br> recipe.
-                    </p>
-                    <div>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                            <i class="ri-facebook-box-fill"></i>
+                </div>
+                <div class="recipe__container container">
+                    <!-- <div class="recipe__card mix ">
+                        <img src="./asset/img" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item"></h3>
+                        <a href="#" class="recipe__button">
+                            More details <i class='uil uil-angle-right-b recipe__icon'></i> 
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social">
-                            <i class="ri-twitter-fill"></i>
+                    </div> -->
+                    <div class="recipe__card mix">
+                        <img src="./asset/img/ramen_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Helllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                            <i class="ri-instagram-fill"></i>
+                    </div>
+                    <div class="recipe__card mix">
+                        <img src="./asset/img/burrito_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">aelllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
                         </a>
-                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                            <i class="ri-youtube-fill"></i>
+                    </div>
+                    <div class="recipe__card mix">
+                        <img src="./asset/img/pasta_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Telllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
                         </a>
+                    </div>
+                    <div class="recipe__card mix burgersandwiches">
+                        <img src="./asset/img/burger_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Telllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+                    <div class="recipe__card mix">
+                        <img src="./asset/img/chips_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Telllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+                    <div class="recipe__card mix ">
+                        <img src="./asset/img/raspberry_brownies_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Telllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+                    <div class="recipe__card mix ">
+                        <img src="./asset/img/steaks_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Zelllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+                    <div class="recipe__card mix ">
+                        <img src="./asset/img/shrimp_pasta_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Telllllllo</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+                    <div class="recipe__card mix ">
+                        <img src="./asset/img/ribs_recipe.jpeg" alt="" class="recipe__img">
+                        <h3 class="recipe-title-item">Ribs</h3>
+                        <a href="#" class="blog__button">
+                            More details <i class='uil uil-angle-right-b blog__icon'></i> 
+                        </a>
+                    </div>
+
+            </section>
+            <div class="about__buttons">
+                <div class="button button--flex" id="loadRecipe">
+                    More post<i class="ri-add-line button__icon"></i>
+                </div>
+            </div>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Kurashiru</h3>
+                        <p class="footer__description">You choose the <br> food, we offer you the <br> recipe.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">About</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">About Us</a>
-                        </li>
-
-                        <li class="footer__item">
-                            <a href="" class="footer__link">New & Blog</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Company</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Team</a>
-                        </li>
-
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Become a member</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Support</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">FAQs</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Support Center</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 simone. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer__rights">
-                <p class="footer__copy">&#169; 2021 simone. All rigths reserved.</p>
-                <div class="footer__terms">
-                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
-                    <a href="#" class="footer__terms-link">Privacy Policy</a>
-                </div>
-            </div>
+        </footer>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
         </div>
-    </footer>
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-fill scrollup__icon"></i>
-    </a>
 
 </body>
 

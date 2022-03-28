@@ -147,6 +147,12 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    opacity: 0;
+}
+
+#fade {
+    opacity: 0;
+    transition: 1.5s;
 }
 
 h1,

@@ -80,3 +80,11 @@ $(document).ready(function() {
         }
     });
 })
+
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('body').style.opacity = "100";
+        document.getElementById('fade').style.opacity = "100";
+    }, 100);
+}
