@@ -1,8 +1,8 @@
 .recipe__container {
     padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
-    grid-template-columns: repeat(1, max-content);
-    justify-content: center;
 }
 
 .recipe__filters {
@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     column-gap: .75rem;
-    margin-bottom: 2rem;
     flex-direction: column;
 }
 
@@ -58,7 +57,7 @@
 
 .categories {
     display: grid;
-    padding: 2rem;
+    padding-bottom: 2rem;
     transition: all ease-in-out;
     grid-template-columns: repeat(4, max-content);
 }
@@ -70,6 +69,7 @@
 .cat {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 #categories-button {

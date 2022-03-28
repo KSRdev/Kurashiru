@@ -34,13 +34,11 @@
     }
     .categories {
         display: grid;
-        padding: 2rem;
+        padding-bottom: 2rem;
         transition: all ease-in-out;
         grid-template-columns: repeat(3, max-content);
     }
     .recipe__container {
-        gap: 3rem;
-        grid-template-columns: repeat(1, max-content);
         justify-content: center;
     }
 }
@@ -140,7 +138,7 @@
     .home__info {
         bottom: 3rem;
     }
-    /*==================== blog ====================*/
+    /*==================== BLOG ====================*/
     .blog__container {
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
@@ -199,9 +197,6 @@
         text-align: left;
     }
     /*==================== recipe ====================*/
-    .recipe__container {
-        grid-template-columns: repeat(2, max-content);
-    }
 }
 
 
@@ -283,13 +278,11 @@
     /*==================== recipe ====================*/
     .categories {
         display: grid;
-        padding: 2rem;
+        padding-bottom: 2rem;
         transition: all ease-in-out;
         grid-template-columns: repeat(8, max-content);
     }
     .recipe__container {
-        gap: 3rem;
-        grid-template-columns: repeat(3, max-content);
         margin-bottom: 2rem;
     }
     .recipe__card {

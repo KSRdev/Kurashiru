@@ -36,7 +36,7 @@ linkWork.forEach(L => L.addEventListener('click', activeWork))
 
 /*=============== HIDE RECIPE DOPO TRE DIV ===============*/
 $(document).ready(function() {
-    $(".recipe__card").slice(0, 6).show();
+    $(".recipe__card").slice(0, 3).show();
     if ($(".recipe__card:hidden").length != 0) {
         $("#loadRecipe").show();
     }
@@ -49,18 +49,35 @@ $(document).ready(function() {
     });
 })
 
-$('.recipe__card').hide();
-$('#search').on("keyup", function() {
-    var searchVal = $('#search').val().toUpperCase();
-    var searchVal1 = $('#search').val().toLowerCase();
 
-    if (searchVal == "" || searchVal1 == "") {
-        $(".recipe__card").slice(0, 6).show();
-    } else {
-        $('.recipe__card').show();
-        $('.recipe__card:not(:contains("' + searchVal + '"))').hide();
+function search_recipe() {
+    let input = document.getElementById('search').value
+    input = input.toLowerCase();
+    let recipeCard = document.getElementsByClassName('recipe__card');
+
+    for (i = 0; i < recipeCard.length; i++) {
+
+        if (input != "" && recipeCard[i].textContent.toLowerCase().includes(input)) {
+            recipeCard[i].style.display = "block";
+        } else {
+            recipeCard[i].style.display = "none";
+        }
+
     }
-});
+}
+
+// $('.recipe__card').hide();
+// $('#search').on("keyup", function() {
+//     var searchVal = $('#search').val().toUpperCase();
+//     var searchVal1 = $('#search').val().toLowerCase();
+
+//     if (searchVal == "" || searchVal1 == "") {
+//         $(".recipe__card").slice(0, 6).show();
+//     } else {
+//         $('.recipe__card').show();
+//         $('.recipe__card:not(:contains("' + searchVal + '"))').hide();
+//     }
+// });
 
 
 
@@ -72,6 +89,8 @@ $('.recipe__card').sort(function(a, b) {
         return 1;
     }
 }).appendTo('.recipe__container');
+
+
 
 /*=============== MIX RECIPE ON CATEGORY ===============*/
 let mixerPortfolio = mixitup('.recipe__container', {
