@@ -50,21 +50,21 @@ $(document).ready(function() {
 })
 
 
-function search_recipe() {
-    let input = document.getElementById('search').value
-    input = input.toLowerCase();
-    let recipeCard = document.getElementsByClassName('recipe__card');
+// function search_recipe() {
+//     let input = document.getElementById('search').value
+//     input = input.toLowerCase();
+//     let recipeCard = document.getElementsByClassName('recipe__card');
 
-    for (i = 0; i < recipeCard.length; i++) {
+//     for (i = 0; i < recipeCard.length; i++) {
 
-        if (input != "" && recipeCard[i].textContent.toLowerCase().includes(input)) {
-            recipeCard[i].style.display = "block";
-        } else {
-            recipeCard[i].style.display = "none";
-        }
+//         if (input != "" && recipeCard[i].textContent.toLowerCase().includes(input)) {
+//             recipeCard[i].style.display = "block";
+//         } else {
+//             recipeCard[i].style.display = "none";
+//         }
 
-    }
-}
+//     }
+// }
 
 // $('.recipe__card').hide();
 // $('#search').on("keyup", function() {

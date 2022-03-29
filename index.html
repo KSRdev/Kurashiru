@@ -225,20 +225,20 @@
                         </div>
                     </div>
 
-                    <form method="post" action="" class="contact__form">
+                    <form method="POST" action="./contact.php" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input name="email" type="email" placeholder=" " class="contact__input">
                                 <label for="email" class="contact__label">Email</label>
                             </div>
 
                             <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input">
+                                <input name="subject" type="text" placeholder=" " class="contact__input">
                                 <label for="subject" class="contact__label">Subject</label>
                             </div>
 
                             <div class="contact__content contact__area">
-                                <textarea type="text" name="message" placeholder=" " class="contact__input"></textarea>
+                                <textarea name="text" type="text" name="message" placeholder=" " class="contact__input"></textarea>
                                 <label for="message" class="contact__label">Message</label>
                             </div>
                         </div>
