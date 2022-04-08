@@ -1,5 +1,3 @@
-
-   
 <?php
     //Component input user
     $visitor_email = $_POST['email'];
