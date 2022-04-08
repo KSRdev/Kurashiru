@@ -225,7 +225,7 @@
                         </div>
                     </div>
 
-                    <form method="POST" action="./contact.php" class="contact__form">
+                    <form method="post" action="./contact.php" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
                                 <input name="email" type="email" placeholder=" " class="contact__input">
@@ -233,17 +233,17 @@
                             </div>
 
                             <div class="contact__content">
-                                <input name="subjects" type="text" placeholder=" " class="contact__input">
-                                <label for="subjects" class="contact__label">Subject</label>
+                                <input name="name" type="text" placeholder=" " class="contact__input">
+                                <label for="name" class="contact__label">Subject</label>
                             </div>
 
                             <div class="contact__content contact__area">
-                                <textarea name="text" type="text" name="message" placeholder=" " class="contact__input"></textarea>
+                                <textarea name="message" type="text" name="message" placeholder=" " class="contact__input"></textarea>
                                 <label for="message" class="contact__label">Message</label>
                             </div>
                         </div>
 
-                        <button class="button button--flex">
+                        <button class="button button--flex" value="SEND MESSAGE">
                                 Send Message
                                 <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
